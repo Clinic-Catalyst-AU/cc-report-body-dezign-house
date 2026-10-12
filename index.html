@@ -1,420 +1,294 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Body Dezign House Growth Plan</title>
+<title>Body Dezign House | Your plan from Clinic Catalyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --dark:#0A2A28;
-    --teal:#00D4BC;
-    --teal-mid:#00B4A0;
-    --teal-dark:#00796D;
-    --paper:#FFFFFF;
-    --paper-2:#F2F6F5;
-    --ink:#0A2A28;
-    --ink-2:#38534F;
-    --mute:#6B807D;
-    --line:#D8E3E1;
-    --head:'Montserrat',-apple-system,'Segoe UI',Arial,sans-serif;
-    --body:'Open Sans',-apple-system,'Segoe UI',Arial,sans-serif;
-  }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --paper:#0A2A28;--paper-2:#0E3936;--ink:#EAF5F3;--ink-2:#C4DAD6;
-      --mute:#8FA9A5;--line:#1C4C48;--teal-dark:#3FE0CC;
-    }
-  }
-  :root[data-theme="dark"]{
-    --paper:#0A2A28;--paper-2:#0E3936;--ink:#EAF5F3;--ink-2:#C4DAD6;
-    --mute:#8FA9A5;--line:#1C4C48;--teal-dark:#3FE0CC;
-  }
+:root{--teal:#00B4A0;--teal-lt:#00D4BC;--hero:#0A2A28;--dark:#0E2D2A;--gold:#D4A853;--paper:#f5f8f7;--line:#dbe6e3;--text:#1d2b29;--muted:#5a6d6a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Open Sans',sans-serif;color:var(--text);background:var(--paper);line-height:1.65;overflow-x:hidden}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:'Montserrat',sans-serif;line-height:1.12}
+h1,h2{font-weight:900;text-transform:uppercase;letter-spacing:.01em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+.kicker{font-family:'Montserrat';font-weight:700;font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;color:var(--teal)}
+section{padding:90px 0}
+h2{font-size:clamp(1.8rem,3.6vw,2.7rem);margin:12px 0 18px}
+.lead{font-size:1.08rem;color:var(--muted);max-width:720px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:15px 28px;border-radius:8px;font-family:'Montserrat';font-weight:800;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;transition:.3s;border:2px solid transparent}
+.btn-teal{background:var(--teal-lt);color:var(--hero)}
+.btn-teal:hover{transform:translateY(-2px);filter:brightness(1.07)}
+.btn-ghost{border-color:rgba(0,212,188,.6);color:#dffcf7}
 
-  *{box-sizing:border-box}
-  body{
-    margin:0;background:var(--paper);color:var(--ink);
-    font-family:var(--body);font-weight:300;font-size:16px;line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-  }
-  .wrap{max-width:880px;margin:0 auto;padding-inline:20px}
+.hero{position:relative;color:#eafaf7;background:radial-gradient(ellipse at 20% 30%,#134a45 0%,#0A2A28 55%,#061b19 100%);overflow:hidden}
+.hero .wrap{position:relative;z-index:2;padding-top:40px;padding-bottom:100px}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:70px;gap:16px;flex-wrap:wrap}
+.topbar img{height:30px;width:auto}
+.date{font-size:.85rem;color:#a9d8d0}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:50px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,5.4vw,4.2rem)}
+.hero h1 span{color:var(--teal-lt)}
+.hero p{font-size:1.15rem;max-width:620px;margin:24px 0 36px;color:#c9ebe5}
+.ctas{display:flex;gap:14px;flex-wrap:wrap}
+.portrait{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/5;border:1px solid rgba(0,212,188,.35)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.portrait span{position:absolute;left:14px;bottom:14px;background:rgba(10,42,40,.85);color:#dffcf7;font-family:'Montserrat';font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:7px 12px;border-radius:20px}
 
-  /* header */
-  .top{
-    background:var(--dark);
-    background-image:radial-gradient(rgba(0,212,188,.16) 1px,transparent 1px);
-    background-size:16px 16px;padding-block:36px 32px;
-  }
-  .top img{display:block;height:24px;width:auto;margin-bottom:24px}
-  .top .for{
-    font-family:var(--head);font-weight:600;font-size:11px;letter-spacing:.24em;
-    text-transform:uppercase;color:var(--teal);margin:0 0 10px;
-  }
-  h1{
-    font-family:var(--head);font-weight:800;font-size:clamp(28px,5.5vw,42px);
-    line-height:1.05;text-transform:uppercase;color:#fff;margin:0;
-  }
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
+.num{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px}
+.num b{display:block;font-family:'Montserrat';font-weight:900;font-size:1.9rem;color:var(--hero);line-height:1}
+.num span{display:block;margin-top:8px;font-size:.86rem;color:var(--muted)}
+.num.k{background:var(--hero);border-color:var(--hero)}.num.k b{color:var(--teal-lt)}.num.k span{color:#b5dcd5}
+.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:28px}
+.q{background:#fff;border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:12px;padding:26px}
+.q p{font-size:1.04rem}
+.q small{display:block;margin-top:10px;color:var(--muted);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;font-family:'Montserrat';font-weight:700}
 
-  /* section */
-  .block{padding-block:44px 0}
-  .band{
-    font-family:var(--head);font-weight:800;font-size:12px;letter-spacing:.22em;
-    text-transform:uppercase;color:var(--teal-dark);margin:0 0 20px;
-    padding-bottom:10px;border-bottom:2px solid var(--dark);
-  }
-  .cols{display:grid;grid-template-columns:minmax(0,1fr) 16.5rem;gap:34px}
+.dark{background:var(--dark);color:#e3f6f2}
+.dark .lead{color:#b5dcd5}
+.steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+.st{background:rgba(255,255,255,.06);border:1px solid rgba(0,212,188,.25);border-radius:16px;padding:30px 26px}
+.st .n{font-family:'Montserrat';font-weight:900;color:var(--teal-lt);font-size:.9rem;letter-spacing:.16em}
+.st h3{font-size:1.2rem;text-transform:uppercase;margin:8px 0 10px}
+.st p{color:#c9ebe5;font-size:.96rem}
 
-  /* included list */
-  .inc{margin:0;padding:0;list-style:none}
-  .inc li{
-    position:relative;padding:0 0 11px 26px;font-size:15.5px;color:var(--ink-2);
-    display:grid;grid-template-columns:minmax(0,1fr) 5.5rem;gap:0 14px;align-items:baseline;
-  }
-  .inc li::before{
-    content:"";position:absolute;left:0;top:.55em;width:10px;height:10px;
-    background:var(--teal-mid);
-  }
-  .inc li b{font-family:var(--head);font-weight:700;color:var(--ink);font-size:15px}
+.wins{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:40px}
+.win{display:grid;grid-template-columns:54px 1fr;gap:16px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px}
+.win .n{width:44px;height:44px;border-radius:50%;background:var(--teal-lt);color:var(--hero);font-family:'Montserrat';font-weight:900;display:flex;align-items:center;justify-content:center}
+.win h3{font-size:1.05rem;margin-bottom:6px}
+.win p{color:var(--muted);font-size:.93rem}
+.win a{color:var(--teal);font-weight:600}
 
-  /* price card */
-  .card{
-    background:var(--dark);
-    background-image:radial-gradient(rgba(0,212,188,.16) 1px,transparent 1px);
-    background-size:16px 16px;
-    padding:26px 24px 24px;align-self:start;border-top:4px solid var(--teal);
-  }
-  .card .was{
-    font-family:var(--head);font-weight:700;font-size:11px;letter-spacing:.18em;
-    text-transform:uppercase;color:rgba(255,255,255,.62);margin:0 0 6px;
-  }
-  .card .old{
-    font-family:var(--head);font-weight:800;font-size:30px;margin:0 0 20px;
-    color:rgba(255,255,255,.55);text-decoration:line-through;
-    text-decoration-thickness:3px;text-decoration-color:var(--teal);
-    font-variant-numeric:tabular-nums;
-  }
-  .card .now{
-    font-family:var(--head);font-weight:700;font-size:11px;letter-spacing:.18em;
-    text-transform:uppercase;color:var(--teal);margin:0 0 6px;
-    padding-top:18px;border-top:1px solid rgba(255,255,255,.18);
-  }
-  .card .fig{
-    font-family:var(--head);font-weight:800;font-size:clamp(34px,7vw,46px);line-height:1;
-    color:#fff;margin:0;font-variant-numeric:tabular-nums;
-  }
-  .card .fig small{display:block;font-family:var(--body);font-weight:400;font-size:13px;
-    color:var(--teal);letter-spacing:.04em;margin-top:8px}
+.flow{display:grid;grid-template-columns:repeat(6,1fr);margin-top:44px}
+.step{position:relative;padding:24px 14px;border:1px solid var(--line);background:#fff;text-align:center}
+.step.hot{background:var(--hero);color:#eafaf7;border-color:var(--hero)}.step.hot span{color:#b5dcd5}
+.step:not(:last-child):after{content:"\2192";position:absolute;right:-13px;top:50%;transform:translateY(-50%);background:var(--teal-lt);color:var(--hero);width:26px;height:26px;border-radius:50%;font-weight:800;z-index:2;line-height:26px;font-size:.9rem}
+.step b{display:block;font-family:'Montserrat';font-weight:800;margin-bottom:6px;font-size:.95rem}
+.step span{font-size:.84rem;color:var(--muted)}
+.levers{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
+.lv{background:#fff;border:1px solid var(--line);border-top:4px solid var(--teal);border-radius:14px;padding:24px}
+.lv .n{font-family:'Montserrat';font-weight:900;color:var(--teal);font-size:.8rem;letter-spacing:.16em}
+.lv h3{font-size:1.05rem;margin:8px 0}
+.lv p{color:var(--muted);font-size:.9rem}
 
-  .inc li .m{text-align:right;white-space:nowrap;line-height:1.25}
-  .inc li .m s{
-    display:block;font-family:var(--head);font-weight:700;font-size:14.5px;
-    font-variant-numeric:tabular-nums;color:var(--mute);text-decoration:line-through;
-    text-decoration-thickness:2px;
-  }
-  .inc li .m em{
-    display:block;font-style:normal;font-family:var(--head);font-weight:800;font-size:10px;
-    letter-spacing:.12em;text-transform:uppercase;color:var(--teal-dark);
-  }
-  .inc li .m em.pay{font-size:13px;letter-spacing:.04em;text-transform:none;color:var(--ink);white-space:normal}
-  .inc li.hero{background:var(--paper-2);padding:14px 14px 14px 26px;margin-bottom:6px}
-  .inc li.hero::before{left:10px;top:1.05em}
-  .also{margin:20px 0 0;font-size:14.5px;line-height:1.6;color:var(--ink-2)}
-  .also b{font-weight:600;color:var(--ink)}
+.demos{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:40px}
+.demo{display:block;text-decoration:none;color:var(--text);background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--line);transition:.3s}
+.demo:hover{transform:translateY(-5px);box-shadow:0 24px 50px -30px rgba(10,42,40,.5)}
+.demo .im{aspect-ratio:16/9;overflow:hidden;position:relative}
+.demo .im img{width:100%;height:100%;object-fit:cover}
+.demo .im span{position:absolute;top:14px;left:14px;background:var(--teal-lt);color:var(--hero);font-family:'Montserrat';font-weight:800;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;padding:5px 11px;border-radius:20px}
+.demo .tx{padding:24px}
+.demo h3{font-size:1.15rem;margin-bottom:6px}
+.demo p{color:var(--muted);font-size:.93rem}
+.demo .go{display:inline-block;margin-top:12px;font-family:'Montserrat';font-weight:800;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
 
-  .plain{
-    margin:0 0 22px;font-size:17px;line-height:1.6;color:var(--ink);
-    border-left:6px solid var(--teal-mid);padding:2px 0 2px 16px;
-  }
-  .plain b{font-family:var(--head);font-weight:800;color:var(--teal-dark)}
+.options{background:var(--hero);color:#e3f6f2}
+.options .lead{color:#b5dcd5}
+.opt{background:#fff;color:var(--text);border-radius:18px;padding:36px 32px;margin-top:44px;max-width:780px;outline:3px solid var(--teal-lt)}
+.opt .label{font-family:'Montserrat';font-weight:800;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--teal)}
+.opt h3{font-size:1.5rem;font-weight:900;text-transform:uppercase;margin:10px 0 12px}
+.opt>p{color:var(--muted)}
+.stack{margin:20px 0 10px}
+.li{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.93rem}
+.li span:first-child{padding-left:24px;position:relative}
+.li span:first-child:before{content:"\2713";position:absolute;left:0;color:var(--teal);font-weight:800}
+.li s{color:var(--muted);white-space:nowrap;font-size:.88rem}
+.tot{display:flex;justify-content:space-between;padding:14px 0 4px;font-family:'Montserrat';font-weight:800;border-top:2px solid var(--hero);margin-top:4px}
+.tot s{color:var(--muted)}
+.price{font-family:'Montserrat';font-weight:900;font-size:2.4rem;color:var(--hero);line-height:1;margin-top:18px}
+.price small{display:block;font-size:.78rem;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-top:6px}
+.price-note{font-size:.9rem;color:var(--muted);margin:10px 0 22px}
+.extra{margin-top:22px;border:1px solid rgba(0,212,188,.35);border-radius:14px;padding:20px 24px;color:#c9ebe5;font-size:.95rem;max-width:780px}
+.extra b{color:var(--teal-lt);font-family:'Montserrat'}
 
-  /* one price panel */
-  .allin{margin-top:30px;padding:18px 20px;background:var(--dark);color:#fff}
-  .allin .l{
-    margin:0 0 6px;font-family:var(--head);font-weight:800;font-size:12px;
-    letter-spacing:.14em;text-transform:uppercase;color:var(--teal);
-  }
-  .allin p:last-child{margin:0;font-size:15px;line-height:1.55}
+.next{text-align:center}
+.next .lead{margin:0 auto 30px}
+footer{background:#061b19;color:#8fb8b1;text-align:center;padding:34px 20px;font-size:.85rem}
+footer img{height:26px;margin:0 auto 14px;width:auto}
 
-  /* website ladder */
-  .ladder{margin-top:30px;border:2px solid var(--line);padding:22px 22px 18px;background:var(--paper-2)}
-  .ladder h2{
-    font-family:var(--head);font-weight:800;font-size:13px;letter-spacing:.14em;
-    text-transform:uppercase;margin:0 0 4px;color:var(--ink);
-  }
-  .ladder .sub{margin:0 0 16px;font-size:14.5px;color:var(--mute)}
-  .ladder .step{
-    display:grid;grid-template-columns:minmax(0,1fr) 6.5rem;gap:0 16px;align-items:baseline;
-    padding:9px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--ink-2);
-  }
-  .ladder .step span:last-child{
-    text-align:right;white-space:nowrap;font-family:var(--head);font-weight:700;
-    font-variant-numeric:tabular-nums;color:var(--teal-dark);
-  }
-  .ladder .sum{
-    display:grid;grid-template-columns:minmax(0,1fr) 6.5rem;gap:0 16px;align-items:baseline;
-    padding:14px 0 0;
-  }
-  .ladder .sum p{margin:0}
-  .ladder .sum .l{font-family:var(--head);font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
-  .ladder .sum .v{
-    text-align:right;font-family:var(--head);font-weight:800;font-size:22px;
-    font-variant-numeric:tabular-nums;
-  }
-  .ladder .note{
-    margin:14px 0 0;padding:12px 14px;background:var(--dark);color:#fff;font-size:14.5px;
-  }
-  .ladder .note b{color:var(--teal);font-weight:600}
+.reveal{opacity:0;transform:translateY(26px);transition:.9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
 
-  .worthline{
-    display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;margin:0 0 12px;
-  }
-  .worthline span{font-size:14px;color:var(--mute)}
-  .worthline s{
-    font-family:var(--head);font-weight:700;font-size:16px;color:var(--mute);
-    text-decoration:line-through;text-decoration-thickness:2px;
-  }
-  .worthline em{
-    font-style:normal;font-family:var(--head);font-weight:800;font-size:17px;color:var(--teal-dark);
-  }
-
-  .bonus{
-    margin-top:34px;padding:26px 24px 22px;background:var(--dark);color:#fff;
-    border-top:6px solid var(--teal-mid);
-  }
-  .bonus .tag{
-    margin:0 0 10px;font-family:var(--head);font-weight:800;font-size:11.5px;
-    letter-spacing:.16em;text-transform:uppercase;color:var(--teal);
-  }
-  .bonus h2{
-    margin:0 0 12px;font-family:var(--head);font-weight:800;font-size:26px;line-height:1.15;color:#fff;
-  }
-  .bonus p{margin:0 0 12px;font-size:15.5px;line-height:1.6;color:rgba(255,255,255,.88)}
-  .bonus .lead{font-size:17px;color:#fff}
-  .bonus em{font-style:normal;color:var(--teal)}
-  .bonus .asks{display:flex;flex-direction:column;gap:8px;margin:0 0 14px}
-  .bonus .asks em{
-    font-style:normal;color:var(--teal);font-size:16px;line-height:1.45;
-    border-left:3px solid var(--teal-mid);padding-left:12px;
-  }
-  .bonus .fine{margin:16px 0 0;padding-top:14px;border-top:1px solid rgba(255,255,255,.22);font-size:14px}
-
-  .flag .rec{
-    margin:0 0 6px;font-family:var(--head);font-weight:800;font-size:11.5px;
-    letter-spacing:.14em;text-transform:uppercase;color:var(--teal-dark);
-  }
-
-  .signon{
-    margin-top:26px;padding:20px 22px;border:2px solid var(--teal-mid);background:var(--paper-2);
-    display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px;
-  }
-  .signon .l{
-    margin:0 0 4px;font-family:var(--head);font-weight:800;font-size:11.5px;
-    letter-spacing:.14em;text-transform:uppercase;color:var(--teal-dark);
-  }
-  .signon .big{margin:0;font-family:var(--head);font-weight:800;font-size:24px;color:var(--ink)}
-  .signon .s{margin:6px 0 0;font-size:14px;color:var(--mute);max-width:34rem}
-  .signon .plan{
-    margin:10px 0 0;padding:10px 12px;background:#fff;border-left:4px solid var(--teal-mid);
-    font-size:14.5px;line-height:1.55;color:var(--ink-2);max-width:34rem;
-  }
-  .signon .plan b{font-family:var(--head);font-weight:700;color:var(--ink)}
-  .signon a{
-    flex:0 0 auto;background:var(--dark);color:#fff;text-decoration:none;
-    font-family:var(--head);font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;
-    padding:14px 22px;
-  }
-  .look{margin-top:34px;border:2px solid var(--line);padding:22px}
-  .look h2{
-    margin:0 0 4px;font-family:var(--head);font-weight:800;font-size:13px;letter-spacing:.14em;
-    text-transform:uppercase;color:var(--ink);
-  }
-  .look .s{margin:0 0 14px;font-size:14.5px;color:var(--mute)}
-  .look a{
-    display:flex;align-items:baseline;justify-content:space-between;gap:16px;
-    padding:12px 0;border-top:1px solid var(--line);text-decoration:none;color:var(--ink);
-  }
-  .look a b{font-family:var(--head);font-weight:700;font-size:15px;display:block}
-  .look a .t{display:block;font-size:14px;color:var(--mute)}
-  .look a .go{
-    flex:0 0 auto;font-family:var(--head);font-weight:800;font-size:12px;
-    letter-spacing:.08em;text-transform:uppercase;color:var(--teal-dark);
-  }
-
-
-  .calc{margin-top:8px;border:2px solid var(--teal-mid);padding:24px 22px;background:var(--paper-2)}
-  .calc .l{margin:0 0 6px;font-family:var(--head);font-weight:800;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-dark)}
-  .calc h2{margin:0 0 10px;font-family:var(--head);font-weight:800;font-size:24px;line-height:1.2;color:var(--ink)}
-  .calc .said{margin:0 0 18px;padding-left:14px;border-left:3px solid var(--teal-mid);font-size:15.5px;line-height:1.55;color:var(--ink-2)}
-  .calc .said em{font-style:italic;color:var(--ink)}
-  .calc .ins{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:0 0 18px}
-  .calc label{display:block;font-family:var(--head);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);margin-bottom:6px}
-  .calc input{width:100%;box-sizing:border-box;padding:12px 14px;font-size:20px;font-family:var(--head);font-weight:700;border:1px solid var(--line);background:#fff;color:var(--ink)}
-  .calc .hint{display:block;margin-top:5px;font-size:12.5px;color:var(--mute)}
-  .calc .res{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
-  .calc .res div{background:#fff;padding:14px 14px 12px}
-  .calc .res span{display:block;font-size:12.5px;color:var(--mute);line-height:1.35}
-  .calc .res b{display:block;margin-top:4px;font-family:var(--head);font-weight:800;font-size:24px;color:var(--teal-dark);font-variant-numeric:tabular-nums}
-  .calc .res div.big{background:var(--dark)}
-  .calc .res div.big span{color:rgba(255,255,255,.75)}
-  .calc .res div.big b{color:#fff}
-  .calc .foot{margin:14px 0 0;font-size:14px;line-height:1.55;color:var(--ink-2)}
-  .inc li .m em.time{color:var(--teal-dark)}
-  .monthly2{margin-top:26px;padding:18px 22px;border-left:6px solid var(--teal-mid);background:var(--paper-2)}
-  .monthly2 .l{margin:0 0 4px;font-family:var(--head);font-weight:800;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-dark)}
-  .monthly2 .big{margin:0 0 6px;font-family:var(--head);font-weight:800;font-size:22px;color:var(--ink)}
-  .monthly2 p{margin:0;font-size:15px;line-height:1.55;color:var(--ink-2)}
-
-  html,body{overflow-x:clip}
-
-  .nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:0 0 18px}
-  .nums div{background:#fff;padding:16px}
-  .nums span{display:block;font-size:12.5px;color:var(--mute);line-height:1.35}
-  .nums b{display:block;margin-top:4px;font-family:var(--head);font-weight:800;font-size:24px;color:var(--ink);font-variant-numeric:tabular-nums}
-  .nums div.k{background:var(--dark)}.nums div.k span{color:rgba(255,255,255,.75)}.nums div.k b{color:#fff}
-  .copy p{margin:0 0 12px;font-size:15.5px;line-height:1.65;color:var(--ink-2)}
-  .copy h2{font-family:var(--head);font-weight:800;font-size:22px;line-height:1.25;margin:0 0 12px;color:var(--ink)}
-  .flowline{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 6px}
-  .flowline span{font-family:var(--head);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:8px 10px;border:1px solid var(--line);background:#fff}
-  .flowline span.hot{background:var(--dark);color:#fff;border-color:var(--dark)}
-  .flowline i{font-style:normal;color:var(--mute);align-self:center}
-  .levers{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-top:14px}
-  .levers div{border:1px solid var(--line);background:#fff;padding:16px}
-  .levers b{display:block;font-family:var(--head);font-weight:800;font-size:15px;margin-bottom:6px;color:var(--ink)}
-  .levers p{margin:0;font-size:14.5px;line-height:1.55;color:var(--ink-2)}
-
-  /* simple call-outs */
-  .flag{border-left:6px solid var(--teal-mid);background:var(--paper-2);padding:20px 22px;margin-top:34px}
-  .flag h2{
-    font-family:var(--head);font-weight:800;font-size:12px;letter-spacing:.18em;
-    text-transform:uppercase;color:var(--teal-dark);margin:0 0 10px;
-  }
-  .flag p{margin:0 0 10px;font-size:15.5px;color:var(--ink-2);max-width:62ch}
-  .flag p:last-child{margin:0}
-  .flag .amt{font-family:var(--head);font-weight:800;color:var(--ink)}
-
-  .look{
-    margin-top:30px;border:2px solid var(--dark);padding:22px 22px 20px;background:var(--paper);
-  }
-  .look h2{
-    font-family:var(--head);font-weight:800;font-size:12px;letter-spacing:.18em;
-    text-transform:uppercase;color:var(--teal-dark);margin:0 0 6px;
-  }
-  .look p.s{margin:0 0 16px;font-size:15px;color:var(--mute)}
-  .look a{
-    display:flex;justify-content:space-between;align-items:center;gap:16px;
-    padding:14px 0;border-top:1px solid var(--line);
-    color:var(--ink);text-decoration:none;font-size:15.5px;
-  }
-  .look a:last-child{border-bottom:1px solid var(--line)}
-  .look a b{font-family:var(--head);font-weight:700;font-size:15px;display:block}
-  .look a span.t{color:var(--mute);font-size:14.5px;display:block;margin-top:2px}
-  .look a span.go{
-    font-family:var(--head);font-weight:800;font-size:12px;letter-spacing:.14em;
-    text-transform:uppercase;color:var(--teal-dark);white-space:nowrap;
-  }
-  .look a:hover span.go,.look a:focus-visible span.go{color:var(--ink)}
-  .look a:focus-visible{outline:2px solid var(--teal-mid);outline-offset:2px}
-
-  footer{padding-block:34px 56px;color:var(--mute);font-size:13px}
-  footer p{margin:0}
-
-  @media (max-width:680px){
-    .cols{grid-template-columns:1fr;gap:24px}
-    .inc li{grid-template-columns:minmax(0,1fr) 5.2rem;gap:0 10px}
-    .card{padding:22px 20px 20px}
-  }
+@media (max-width:900px){
+  .hero-grid,.quotes,.steps3,.wins,.demos{grid-template-columns:1fr}
+  .portrait{max-width:340px}
+  .nums,.levers{grid-template-columns:1fr 1fr}
+  .flow{grid-template-columns:1fr 1fr;gap:14px}
+  .step:after{display:none}
+  .topbar{margin-bottom:50px}
+  section{padding:66px 0}
+}
+@media (max-width:520px){
+  .wrap{padding:0 18px}
+  .nums,.levers,.flow{grid-template-columns:1fr}
+  .opt{padding:28px 20px}
+  .li{font-size:.88rem}
+  .win{grid-template-columns:44px 1fr;padding:20px}
+}
 </style>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@300;400;600&display=swap">
+</head>
+<body>
 
-<div style="background:#06292A;color:#cfe3e0;text-align:center;padding:12px 16px;font-family:Montserrat,sans-serif;font-weight:600;font-size:.9rem">See it working: <a href="assessment.html" style="color:#00D4BC;font-weight:700;margin:0 10px">Skin assessment landing page</a> <a href="gallery.html" style="color:#00D4BC;font-weight:700;margin:0 10px">Private before &amp; after gallery</a></div>
-<header class="top">
+<header class="hero">
   <div class="wrap">
-    <img src="cc-wordmark.png" alt="Clinic Catalyst">
-    <p class="for">Body Dezign House</p>
-    <h1>Systemise it.<br>Then scale it.</h1>
+    <div class="topbar">
+      <img src="assets/cc-logo.png" alt="Clinic Catalyst">
+      <div class="date">Prepared for Dr Fatemeh Asadi &middot; Body Dezign House &middot; October 2026</div>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <div class="kicker">Your plan</div>
+        <h1 class="reveal">Systemise it. <span>Then scale it.</span></h1>
+        <p class="reveal">You've built a doctor-led clinic with the technology, the team and the patients to match. The next step is a system that catches every enquiry, follows up every consultation and runs without you holding it all together, so a second clinic (or a holiday) becomes possible.</p>
+        <div class="ctas reveal">
+          <a class="btn btn-teal" href="#wins">See your quick wins</a>
+          <a class="btn btn-ghost" href="#demos">See it working</a>
+        </div>
+      </div>
+      <div class="portrait reveal"><img src="assets/dr-fatemeh-asadi-portrait.webp" alt="Dr Fatemeh Asadi, Body Dezign House"><span>Dr Fatemeh Asadi</span></div>
+    </div>
   </div>
 </header>
 
-<div class="wrap">
-
-  <section class="block">
-    <p class="band">What you are already doing really well</p>
-    <div class="levers"><div><b>Doctor-led authority</b><p>You are a doctor with real clinical credibility. That trust is hard to build and you already have it.</p></div><div><b>A brilliant consultation</b><p>45 minutes, 3D skin analysis and a personalised plan with pricing, redeemable toward treatment. This is the best front door you could have.</p></div><div><b>Google is working</b><p>Your Google Ads and SEO are bringing in new patients. We would not touch what is working.</p></div><div><b>A strong website foundation</b><p>Clear pricing, medical credentials and trust signals already in place.</p></div><div><b>A real point of difference</b><p>Women's health, perimenopause and menopause care alongside skin. That sets you apart.</p></div><div><b>A team that is growing</b><p>New therapists and clinical hires are on the way, so the business can grow beyond you.</p></div></div>
-  </section>
-  <section class="block">
-    <p class="band">Quick wins you can start this week</p>
-    <div class="levers"><div><b>1. Stop sending Meta ads straight to Zenoti</b><p>Send them to a lead form or a page like the <a href="assessment.html" >skin assessment</a>, so you capture a name and number from everyone who clicks, not just those ready to book that day.</p></div><div><b>2. Text every enquiry within 5 minutes</b><p>A personal SMS while they are still thinking about you. Speed alone lifts bookings.</p></div><div><b>3. Follow up every consultation after 48 hours</b><p>"It was lovely meeting you this week, did you have any questions about the plan we discussed?" Not selling, just caring. This is where most of the revenue is sitting.</p></div><div><b>4. Lead your ads with the consultation, not the device</b><p>"Not sure what your skin actually needs?" works better than a machine name. Let the consultation choose the treatment.</p></div><div><b>5. Get you on camera at your next content day</b><p>Short videos like "Why I wouldn't recommend this treatment for everyone". Your content spend should build your authority.</p></div><div><b>6. Ask every patient for a Google review</b><p>A text with your direct review link after each appointment.</p></div><div><b>7. Finish the website move</b><p>Redirect every old page to its new page, submit the new sitemap, and update or close the old Cleveland listing on Google.</p></div><div><b>8. Rebook before they leave</b><p>Make the next appointment part of every visit, and track rebooking for each practitioner.</p></div></div>
-  </section>
-<section class="block">
-    <p class="band">Where you are &middot; where you are going</p>
+<section id="heard">
+  <div class="wrap">
+    <div class="kicker">What we heard</div>
+    <h2 class="reveal">Where you are now</h2>
     <div class="nums">
-      <div><span>Monthly revenue today, as you told us</span><b>~$120,000</b></div>
-      <div><span>Average patient spend a year</span><b>~$2,400</b></div>
-      <div><span>Needed each month for $2M a year</span><b>~$167,000</b></div>
-      <div class="k"><span>Needed each month for $3M a year</span><b>~$250,000</b></div>
+      <div class="num reveal"><b>~$120K</b><span>Monthly revenue today, as you told us</span></div>
+      <div class="num reveal"><b>~$2,400</b><span>Average patient spend a year</span></div>
+      <div class="num reveal"><b>~$167K</b><span>Needed each month for $2M a year</span></div>
+      <div class="num k reveal"><b>~$250K</b><span>Needed each month for $3M a year</span></div>
     </div>
-    <div class="copy">
-      <p>You have already done the hard part: the medical authority, the technology, the team and the revenue. The question now is not how to get more leads. It is how to acquire more of the right patients, convert more of them, increase what each patient is worth over a year, and run the clinic without everything depending on you.</p>
-      <p><b>Systemise it before you scale it.</b> A second location, or a holiday, both need the same thing: a clinic that runs on a system rather than on you personally holding it together.</p>
+    <div class="quotes">
+      <div class="q reveal"><p>You want more clinics, but right now you can't even take a holiday. Too much still runs through you.</p><small>Your capacity</small></div>
+      <div class="q reveal"><p>Your Meta ads send people straight into Zenoti. Anyone who isn't ready to book that day is gone, with no follow-up.</p><small>Your biggest gap</small></div>
+      <div class="q reveal"><p>Patients leave your consultation with a printed plan and "I'll think about it", and nothing brings them back.</p><small>Your consultations</small></div>
+      <div class="q reveal"><p>You asked for a CRM, staff scripts, a sales process, SOPs and rebooking. You know what's missing.</p><small>Your priorities</small></div>
     </div>
-  </section>
-
-  <section class="block">
-    <p class="band">The biggest gap we heard</p>
-    <div class="copy">
-      <h2>Your Meta ads send people straight into Zenoti</h2>
-      <p>Anyone who clicks, looks, is not ready, and leaves, is gone. There is no database of them, no follow-up and no second chance to convert them later. The same happens when a patient leaves a consultation with their printed plan and says "I'll think about it."</p>
-      <p>So the system sits in front of Zenoti, not instead of it:</p>
-      <div class="flowline"><span>Ad or search</span><i>&rarr;</i><span class="hot">Lead captured</span><i>&rarr;</i><span class="hot">Answered straight away</span><i>&rarr;</i><span class="hot">Nurtured by concern</span><i>&rarr;</i><span>Consultation</span><i>&rarr;</i><span>Zenoti</span><i>&rarr;</i><span class="hot">Plan follow-up</span></div>
-      <p>And then every lead can be traced from source to consultation to treatment revenue, so you know which campaign actually paid for itself, not just which one produced the most leads.</p>
-    </div>
-  </section>
-
-  <section class="block">
-    <p class="band">The four levers to $2M and beyond</p>
-    <div class="levers">
-      <div><b>1. Acquire the right patients</b><p>Google for the people already searching, Meta for the ones who do not know what they need yet, doctor-led education that shows why you are different.</p></div>
-      <div><b>2. Convert what you already pay for</b><p>Every enquiry captured, answered quickly and followed up, including the patients who leave with a plan and have not booked.</p></div>
-      <div><b>3. Increase each patient's value</b><p>Personalised twelve-month plans, rebooking, homecare and reactivation, rather than one treatment at a time.</p></div>
-      <div><b>4. Take you out of the middle</b><p>The system, the automations and your team's process doing the follow-up, so growth does not mean more hours for you.</p></div>
-    </div>
-  </section>
-
-  <section class="block">
-    <p class="band">Your 30-day intensive &middot; what it is worth &middot; what you pay</p>
-    <p class="plain">Your thirty-day intensive is <b>$5,000</b>, paid once, including GST. Every line below is included. Bought separately, the same work is <b>$37,500</b>.</p>
-    <div class="cols">
-      <ul class="inc">
-        <li><span class="t"><b>AIOS installed.</b> The AI system under the clinic, set up in your own account and trained on how Body Dezign House works: your treatments, your published pricing, your consultation and your voice.</span><span class="m"><s>$10,000</s><em>included</em></span></li>
-        <li><span class="t"><b>Three campaigns, built across Meta and Google.</b> Concern-led and pointing at your consultation, each with its own audience, ads and tracking. Google keeps catching the people already searching; Meta starts the conversation with the ones who do not know what they need yet.</span><span class="m"><s>$7,500</s><em>included</em></span></li>
-        <li><span class="t"><b>GoHighLevel set up in front of Zenoti.</b> Every enquiry from Meta, Google, Instagram, Facebook and your website captured in one pipeline before it reaches Zenoti, so nobody who clicks and is not ready simply disappears. Zenoti stays your booking system.</span><span class="m"><s>$5,000</s><em>included</em></span></li>
-        <li><span class="t"><b>Automations that follow up for you.</b> A nurture sequence for each concern, so a pigmentation enquiry hears about pigmentation and an acne enquiry hears about acne. Follow-up after the consultation plan, review requests and reactivation of past patients.</span><span class="m"><s>$4,500</s><em>included</em></span></li>
-        <li><span class="t"><b>Conversational AI across email, SMS and DMs.</b> Enquiries answered in your clinic's words, day and night, capturing their details and their main concern and guiding them to a consultation. Anything clinical, any individual treatment advice, goes to your team.</span><span class="m"><s>$3,000</s><em>included</em></span></li>
-        <li><span class="t"><b>Content connected and publishing.</b> Your content feeding your channels on a schedule from the same system, so the education your team creates keeps working without someone posting it by hand.</span><span class="m"><s>$2,500</s><em>included</em></span></li>
-        <li><span class="t"><b>Thirty days, one to one with Kelly and Alicia.</b> Built with you and your team, shown how to run each part as we go, and connected end to end before we hand it over.</span><span class="m"><s>$5,000</s><em>included</em></span></li>
-      </ul>
-      <div class="card">
-        <p class="was">Bought piece by piece</p>
-        <p class="old">$37,500</p>
-        <p class="now">You pay</p>
-        <p class="fig">$5,000<small>once &middot; including GST</small></p>
-      </div>
-    </div>
-
-    <div class="signon">
-      <div>
-        <p class="l">To start</p>
-        <p class="big">$500 holds your place</p>
-        <p class="s">Deducted from your $5,000, not added to it. Strictly five clinics a month.</p>
-      </div>
-      <a href="https://link.fastpaydirect.com/payment-link/6aa0e2f3e9a073174b3b555c" target="_blank" rel="noopener">Hold my place &rarr;</a>
-    </div>
-  </section>
-
-  <div class="flag">
-    <p class="rec">Not included</p>
-    <p><b>Ad spend.</b> Paid straight to Meta and Google from your own accounts, never through us.</p>
-    <p><b>Your Claude subscription and the usage that runs on it.</b> Your AIOS lives in your own Claude account, in your name, so the clinic's information stays with the clinic. The subscription and any usage costs are paid by you directly.</p>
-    <p><b>Nothing else.</b> Zenoti, your domain and any other subscriptions stay in your name.</p>
   </div>
+</section>
 
-</div>
+<section class="dark" id="well">
+  <div class="wrap">
+    <div class="kicker">First things first</div>
+    <h2 class="reveal">What you're already doing really well</h2>
+    <p class="lead reveal">This isn't a clinic that needs fixing. You've done the hard part. Here's what we'd build on.</p>
+    <div class="steps3">
+      <div class="st reveal"><div class="n">01</div><h3>Doctor-led authority</h3><p>You're a doctor with real clinical credibility. That trust is hard to build, and you already have it.</p></div>
+      <div class="st reveal"><div class="n">02</div><h3>A brilliant consultation</h3><p>45 minutes, 3D skin analysis and a personalised plan with pricing, redeemable toward treatment. The best front door you could have.</p></div>
+      <div class="st reveal"><div class="n">03</div><h3>Google is working</h3><p>Your Google Ads and SEO are bringing in new patients. We wouldn't touch what's working.</p></div>
+      <div class="st reveal"><div class="n">04</div><h3>A strong website</h3><p>Clear pricing, medical credentials and trust signals are already in place.</p></div>
+      <div class="st reveal"><div class="n">05</div><h3>A real point of difference</h3><p>Women's health, perimenopause and menopause care alongside skin. That sets you apart.</p></div>
+      <div class="st reveal"><div class="n">06</div><h3>A growing team</h3><p>New therapists and clinical hires are on the way, so the clinic can grow beyond you.</p></div>
+    </div>
+  </div>
+</section>
 
-<footer class="wrap">
-  <p>Clinic Catalyst for Body Dezign House &middot; 17 September 2026 &middot; Confidential</p>
+<section id="wins">
+  <div class="wrap">
+    <div class="kicker">Start this week</div>
+    <h2 class="reveal">Quick wins you can do right now</h2>
+    <p class="lead reveal">No new software needed for most of these. They start plugging the gaps straight away.</p>
+    <div class="wins">
+      <div class="win reveal"><div class="n">1</div><div><h3>Stop sending Meta ads straight to Zenoti</h3><p>Send them to a lead form or a page like the <a href="assessment.html">skin assessment</a>, so you capture a name and number from everyone who clicks.</p></div></div>
+      <div class="win reveal"><div class="n">2</div><div><h3>Text every enquiry within 5 minutes</h3><p>A personal SMS while they're still thinking about you. Speed alone lifts bookings.</p></div></div>
+      <div class="win reveal"><div class="n">3</div><div><h3>Follow up every consultation after 48 hours</h3><p>"It was lovely meeting you this week. Did you have any questions about your plan?" This is where most of the revenue is sitting.</p></div></div>
+      <div class="win reveal"><div class="n">4</div><div><h3>Lead your ads with the consultation</h3><p>"Not sure what your skin actually needs?" works better than a machine name. Let the consultation choose the treatment.</p></div></div>
+      <div class="win reveal"><div class="n">5</div><div><h3>Get you on camera at your next content day</h3><p>Short videos like "Why I wouldn't recommend this treatment for everyone". Make your content spend build your authority.</p></div></div>
+      <div class="win reveal"><div class="n">6</div><div><h3>Ask every patient for a Google review</h3><p>A text with your direct review link after each appointment.</p></div></div>
+      <div class="win reveal"><div class="n">7</div><div><h3>Finish the website move</h3><p>Redirect every old page to its new one, submit the new sitemap, and update or close the old Cleveland listing on Google.</p></div></div>
+      <div class="win reveal"><div class="n">8</div><div><h3>Rebook before they leave</h3><p>Make the next appointment part of every visit, and track rebooking for each practitioner.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff" id="system">
+  <div class="wrap">
+    <div class="kicker">The system</div>
+    <h2 class="reveal">It sits in front of Zenoti, not instead of it</h2>
+    <p class="lead reveal">Zenoti stays your booking system. The system in front of it catches every enquiry, answers it straight away and follows up until they book, then follows up again after the consultation.</p>
+    <div class="flow">
+      <div class="step reveal"><b>Ad or search</b><span>Meta, Google, Instagram, website</span></div>
+      <div class="step hot reveal"><b>Lead captured</b><span>Name, number and concern</span></div>
+      <div class="step hot reveal"><b>Answered</b><span>Within minutes, day or night</span></div>
+      <div class="step hot reveal"><b>Nurtured</b><span>By concern: pigment, acne, ageing</span></div>
+      <div class="step reveal"><b>Consultation</b><span>Booked into Zenoti</span></div>
+      <div class="step hot reveal"><b>Plan follow-up</b><span>48 hours later, then ongoing</span></div>
+    </div>
+    <div class="levers">
+      <div class="lv reveal"><div class="n">Lever 1</div><h3>Acquire the right patients</h3><p>Google for people already searching, Meta for those who don't know what they need yet.</p></div>
+      <div class="lv reveal"><div class="n">Lever 2</div><h3>Convert what you already pay for</h3><p>Every enquiry captured and followed up, including patients who leave with a plan.</p></div>
+      <div class="lv reveal"><div class="n">Lever 3</div><h3>Increase each patient's value</h3><p>Twelve-month plans, rebooking, homecare and reactivation.</p></div>
+      <div class="lv reveal"><div class="n">Lever 4</div><h3>Take you out of the middle</h3><p>Scripts, SOPs and automations doing the follow-up, so growth doesn't mean more hours for you.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="demos">
+  <div class="wrap">
+    <div class="kicker">See it working</div>
+    <h2 class="reveal">Two pieces we built for you</h2>
+    <p class="lead reveal">Click through. Both are concepts in your clinic's look, built around your consultation.</p>
+    <div class="demos">
+      <a class="demo reveal" href="assessment.html"><div class="im"><img src="assets/visia-hero.webp" alt="Skin assessment"><span>Landing page</span></div><div class="tx"><h3>Skin assessment</h3><p>Five questions for your Meta ads to point at. Every answer captures her details and concern, then guides her to your $200 consultation.</p><span class="go">Try it &rarr;</span></div></a>
+      <a class="demo reveal" href="gallery.html"><div class="im"><img src="assets/skin-laxity-hero.webp" alt="Results gallery"><span>Private gallery</span></div><div class="tx"><h3>Before &amp; after gallery</h3><p>Results shared privately with people who've enquired, unlocked with a code from their follow-up. Demo code: bdh2026.</p><span class="go">Open it &rarr;</span></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="options" id="options">
+  <div class="wrap">
+    <div class="kicker">How we build it</div>
+    <h2 class="reveal">Your 30-day intensive</h2>
+    <p class="lead reveal">Built in your own accounts with you and your team, so you own every piece of it.</p>
+    <div class="opt reveal">
+      <div class="label">1:1 with Kelly and Alicia</div>
+      <h3>30-day intensive</h3>
+      <p>Thirty days building the whole system with you, connected end to end and handed over with your team trained to run it.</p>
+      <div class="stack">
+        <div class="li"><span>Kelly's AIOS installed, trained on your treatments, pricing, consultation and voice</span><s>$10,000</s></div>
+        <div class="li"><span>Three concern-led campaigns across Meta and Google, pointing at your consultation</span><s>$7,500</s></div>
+        <div class="li"><span>GoHighLevel set up in front of Zenoti, every enquiry in one pipeline</span><s>$5,000</s></div>
+        <div class="li"><span>Automations that follow up for you, by concern and after every consultation</span><s>$4,500</s></div>
+        <div class="li"><span>Conversational AI across email, SMS and DMs, with clinical questions escalated</span><s>$3,000</s></div>
+        <div class="li"><span>Content connected and publishing on a schedule</span><s>$2,500</s></div>
+        <div class="li"><span>Thirty days, one to one with Kelly and Alicia</span><s>$5,000</s></div>
+        <div class="tot"><span>Total value</span><s>$37,500</s></div>
+      </div>
+      <div class="price">$5,000<small>Including GST, for the 30-day intensive</small></div>
+      <p class="price-note">$500 to sign on, and the rest spread to suit your cash flow.</p>
+      <a class="btn btn-teal" href="https://link.fastpaydirect.com/payment-link/6aa0e2f3e9a073174b3b555c" target="_blank" rel="noopener">Pay my $500 sign-on</a>
+    </div>
+    <div class="extra reveal"><b>Paid separately, straight to the provider:</b> your ad spend on Meta and Google, your GoHighLevel subscription and your Claude subscription.</div>
+  </div>
+</section>
+
+<section class="next" id="next">
+  <div class="wrap">
+    <div class="kicker">Next step</div>
+    <h2 class="reveal">Let's build it</h2>
+    <p class="lead reveal">Start with the quick wins this week. When you're ready for the whole system, pay your sign-on and we'll book your kick-off straight away.</p>
+    <div class="ctas" style="justify-content:center">
+      <a class="btn btn-teal reveal" href="https://link.fastpaydirect.com/payment-link/6aa0e2f3e9a073174b3b555c" target="_blank" rel="noopener">Start the 30-day intensive</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <img src="assets/cc-logo.png" alt="Clinic Catalyst">
+  Prepared by Kelly Wotherspoon and Alicia Hagen, Clinic Catalyst. Concept materials for Body Dezign House only.
 </footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
