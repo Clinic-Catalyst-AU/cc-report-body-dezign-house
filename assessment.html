@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Skin Assessment | Body Dezign House (concept)</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2D2622;--soft:#6B5949;--gold:#8B6F3F;--gold-l:#C9A96E;--cream:#FEFCF8;--sand:#F5EFE5;--line:#E8DFD0}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Nunito Sans',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;overflow-x:hidden}
+.rib{background:var(--ink);color:#e9dfcf;text-align:center;font-size:.8rem;padding:9px 14px}.rib a{color:var(--gold-l);font-weight:700;text-decoration:none;margin-left:6px}
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:46vh}.hero img{width:100%;height:100%;object-fit:cover}
+.hero .tx{padding:56px 48px;display:flex;flex-direction:column;justify-content:center;background:var(--sand)}
+.eye{text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;color:var(--gold);font-weight:700;margin-bottom:12px}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:500;line-height:1.1}h1{font-size:clamp(2.1rem,4.5vw,3.3rem)}h2{font-size:1.9rem;margin-bottom:6px}
+.hero p{margin-top:14px;color:var(--soft);font-size:1.05rem}
+.box{max-width:680px;margin:-40px auto 60px;background:#fff;border-radius:20px;padding:36px;box-shadow:0 30px 60px -35px rgba(45,38,34,.45);position:relative}
+.bar{height:4px;background:var(--sand);border-radius:4px;margin-bottom:24px;overflow:hidden}.bar i{display:block;height:100%;width:20%;background:var(--gold);transition:width .4s}
+.q{display:none}.q.on{display:block;animation:f .4s}@keyframes f{from{opacity:0;transform:translateY(8px)}}
+.sub{color:var(--soft);margin-bottom:16px;font-size:.95rem}
+.opts{display:grid;gap:10px}.opts button{font:inherit;text-align:left;background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:15px 18px;cursor:pointer;color:var(--ink);transition:.2s}.opts button:hover{border-color:var(--gold);background:var(--sand)}
+.opts.two{grid-template-columns:1fr 1fr}
+input{width:100%;font:inherit;padding:14px 16px;border:1px solid var(--line);border-radius:12px;margin-bottom:10px;background:var(--cream)}
+.btn{display:inline-block;background:var(--ink);color:#fff;border:0;font:inherit;font-weight:700;padding:15px 28px;border-radius:40px;cursor:pointer;text-decoration:none;margin-top:6px}
+.res img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;margin:14px 0}
+.note{font-size:.78rem;color:var(--soft);margin-top:14px}
+.how{max-width:900px;margin:0 auto 70px;padding:0 20px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}.steps div{background:var(--sand);border-radius:14px;padding:18px;font-size:.9rem}.steps b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:500;margin-bottom:4px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.hero img{height:240px}.hero .tx{padding:36px 20px 64px}.box{margin:-36px 14px 50px;padding:24px}.opts.two{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}}
+</style></head><body>
+<div class="rib">Concept: skin assessment landing page for Body Dezign House, by Clinic Catalyst. <a href="index.html">Back to the plan</a> <a href="gallery.html">Gallery demo</a></div>
+<div class="hero"><img src="assets/visia-hero.webp" alt="Advanced skin analysis at Body Dezign House"><div class="tx">
+<div class="eye">Body Dezign House &middot; Newstead</div>
+<h1>Not sure what your skin actually needs?</h1>
+<p>Answer 5 quick questions and we'll show you where to start. You shouldn't have to diagnose your own skin. That's our job.</p></div></div>
+
+<div class="box">
+<div class="bar"><i id="bar"></i></div>
+<div class="q on" data-q="1"><h2>What would you most like to change?</h2><p class="sub">Pick the one that bothers you most.</p><div class="opts">
+<button data-c="pig">Pigmentation or sun damage that keeps coming back</button>
+<button data-c="age">Fine lines, texture or loss of firmness</button>
+<button data-c="acne">Breakouts, acne or scarring</button>
+<button data-c="wh">My skin has changed with perimenopause or menopause</button>
+<button data-c="ns">Honestly, I'm not sure where to start</button></div></div>
+<div class="q" data-q="2"><h2>How long has it been bothering you?</h2><div class="opts two"><button>A few months</button><button>About a year</button><button>Several years</button><button>As long as I can remember</button></div></div>
+<div class="q" data-q="3"><h2>What have you tried so far?</h2><div class="opts two"><button>Skincare only</button><button>Facials or peels</button><button>Laser or device treatments</button><button>Nothing yet</button></div></div>
+<div class="q" data-q="4"><h2>When would you like to start?</h2><div class="opts two"><button>As soon as possible</button><button>In the next month</button><button>Before a special event</button><button>Just researching for now</button></div></div>
+<div class="q" data-q="5"><h2>Where should we send your result?</h2><p class="sub">Your personalised starting point, plus what to expect at your consultation.</p>
+<input placeholder="First name"><input placeholder="Email"><input placeholder="Mobile">
+<button class="btn" id="go">Show my result</button><p class="note">Demo only. In the live version this goes straight into your CRM and starts the right follow-up for this concern.</p></div>
+<div class="q res" data-q="6"><div class="eye">Your starting point</div><h2 id="rt"></h2><img id="ri" src="" alt=""><p id="rx" style="color:var(--soft)"></p>
+<p style="margin-top:12px">Your <em>Advanced Skin &amp; Ageing Consultation</em> is 45 minutes with advanced imaging, 3D analysis and a personalised plan with pricing. $200, redeemable toward treatment.</p>
+<a class="btn" href="#">Book my consultation</a><p class="note">Every treatment is recommended only after a consultation and assessment of your suitability.</p></div>
+</div>
+
+<div class="how"><div class="eye">What happens behind the scenes</div><h2>Every answer starts the right follow-up</h2>
+<div class="steps"><div><b>Tagged by concern</b>Pigmentation, ageing, acne or women's health</div><div><b>Instant SMS</b>A personal text within a minute</div><div><b>Concern-led emails</b>Education on her concern over 10 days</div><div><b>Team alert</b>Hot leads flagged for a call</div></div></div>
+
+<script>
+var s=1,c='ns',R={pig:['Start with skin analysis for pigmentation','pigmentation-hero.webp','Pigmentation that keeps returning usually needs the cause understood before choosing another treatment. Your consultation maps exactly what is driving it.'],
+age:['Start with a skin ageing and laxity assessment','skin-laxity-hero.webp','Lines, texture and firmness need different approaches. The right combination depends on whether we are treating texture, laxity or volume.'],
+acne:['Start with an acne and scarring assessment','acne-hero.webp','If skincare, peels or medication have not held, your consultation looks at what we would try next and in what order.'],
+wh:['Start with a skin and women\'s health consultation','womens-health-hero.webp','Hormonal change shows up in the skin. A doctor-led consultation looks at how you look and feel together.'],
+ns:['Start with an Advanced Skin & Ageing Consultation','visia-hero.webp','Not knowing where to start is exactly what the consultation is for. We look closely, explain what we see and give you a clear plan.']};
+document.querySelectorAll('.opts button').forEach(function(b){b.onclick=function(){if(s===1)c=b.dataset.c;nx()}});
+document.getElementById('go').onclick=function(){var r=R[c];document.getElementById('rt').textContent=r[0];document.getElementById('ri').src='assets/'+r[1];document.getElementById('rx').textContent=r[2];nx()};
+function nx(){document.querySelector('[data-q="'+s+'"]').classList.remove('on');s++;document.getElementById('bar').style.width=Math.min(s*20,100)+'%';document.querySelector('[data-q="'+s+'"]').classList.add('on')}
+</script></body></html>

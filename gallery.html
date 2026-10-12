@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Results Gallery | Body Dezign House (concept)</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2D2622;--soft:#6B5949;--gold:#8B6F3F;--gold-l:#C9A96E;--cream:#FEFCF8;--sand:#F5EFE5;--line:#E8DFD0}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Nunito Sans',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;overflow-x:hidden}
+.rib{background:var(--ink);color:#e9dfcf;text-align:center;font-size:.8rem;padding:9px 14px}.rib a{color:var(--gold-l);font-weight:700;text-decoration:none;margin-left:6px}
+.eye{text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;color:var(--gold);font-weight:700;margin-bottom:12px}
+h1,h2{font-family:'Cormorant Garamond',serif;font-weight:500;line-height:1.1}h1{font-size:clamp(2rem,4.5vw,3.2rem)}
+.gate{min-height:86vh;display:grid;grid-template-columns:1fr 1fr}.gate img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.gate .tx{padding:56px 48px;display:flex;flex-direction:column;justify-content:center;background:var(--sand)}
+.gate p{color:var(--soft);margin:14px 0 22px}
+input{font:inherit;padding:14px 16px;border:1px solid var(--line);border-radius:12px;width:100%;max-width:340px;background:#fff}
+.btn{display:inline-block;background:var(--ink);color:#fff;border:0;font:inherit;font-weight:700;padding:14px 26px;border-radius:40px;cursor:pointer;margin-top:10px;text-decoration:none}
+.err{color:#a33;font-size:.85rem;margin-top:8px;display:none}.hint{font-size:.8rem;color:var(--soft);margin-top:14px}
+#g{display:none;max-width:1100px;margin:0 auto;padding:50px 20px 70px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 26px}.filters button{font:inherit;border:1px solid var(--line);background:#fff;border-radius:30px;padding:9px 16px;cursor:pointer}.filters button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 18px 40px -30px rgba(45,38,34,.5)}
+.pair{display:grid;grid-template-columns:1fr 1fr;position:relative}.pair div{aspect-ratio:3/4;background-size:cover;background-position:center}
+.pair div:first-child{filter:saturate(.5) brightness(.92)}.pair span{position:absolute;bottom:8px;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:rgba(255,255,255,.9);padding:3px 8px;border-radius:20px}.pair span.b{left:8px}.pair span.a{right:8px}
+.card .tx{padding:16px}.card b{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500}.card p{font-size:.85rem;color:var(--soft)}
+.legal{margin-top:30px;font-size:.8rem;color:var(--soft);background:var(--sand);border-radius:14px;padding:18px}
+@media(max-width:760px){.gate{grid-template-columns:1fr}.gate img{height:300px}.gate .tx{padding:34px 20px}.grid{grid-template-columns:1fr}}
+</style></head><body>
+<div class="rib">Concept: private before &amp; after gallery for Body Dezign House, by Clinic Catalyst. <a href="index.html">Back to the plan</a> <a href="assessment.html">Assessment demo</a></div>
+
+<div class="gate" id="gate"><img src="assets/dr-fatemeh-asadi-portrait.webp" alt="Dr Fatemeh Asadi, Body Dezign House"><div class="tx">
+<div class="eye">Private results gallery</div><h1>See real results, privately</h1>
+<p>Before and after photos can't be shown publicly, so we share them privately with people who've enquired. Enter the code from your consultation email or text.</p>
+<input id="code" placeholder="Gallery code"><br><button class="btn" id="unlock">View gallery</button><div class="err" id="err">That code doesn't match. Check your email or text.</div>
+<p class="hint">Demo code: <em>bdh2026</em></p></div></div>
+
+<div id="g">
+<div class="eye">Results gallery</div><h1>Results by concern</h1>
+<div class="filters"><button class="on" data-f="all">All</button><button data-f="pig">Pigmentation</button><button data-f="age">Skin laxity + ageing</button><button data-f="acne">Acne + scarring</button></div>
+<div class="grid">
+<div class="card" data-c="pig"><div class="pair"><div style="background-image:url(assets/pigmentation-hero.webp)"></div><div style="background-image:url(assets/pigmentation-hero.webp)"></div><span class="b">Before</span><span class="a">After</span></div><div class="tx"><b>Pigmentation</b><p>Consented patient photo goes here, with treatment course and timeframe.</p></div></div>
+<div class="card" data-c="age"><div class="pair"><div style="background-image:url(assets/skin-laxity-hero.webp)"></div><div style="background-image:url(assets/skin-laxity-hero.webp)"></div><span class="b">Before</span><span class="a">After</span></div><div class="tx"><b>Skin laxity</b><p>Consented patient photo goes here, with treatment course and timeframe.</p></div></div>
+<div class="card" data-c="acne"><div class="pair"><div style="background-image:url(assets/acne-hero.webp)"></div><div style="background-image:url(assets/acne-hero.webp)"></div><span class="b">Before</span><span class="a">After</span></div><div class="tx"><b>Acne + scarring</b><p>Consented patient photo goes here, with treatment course and timeframe.</p></div></div>
+</div>
+<div class="legal">How it works: the code is sent automatically in the nurture sequence after someone enquires or books a consultation. Photos are only added with written patient consent, shown with the treatment and timeframe, and results vary between individuals. The page is hidden from Google.</div>
+<p style="margin-top:24px"><a class="btn" href="assessment.html">Not sure what you need? Take the skin assessment</a></p>
+</div>
+<script>
+document.getElementById('unlock').onclick=function(){if(document.getElementById('code').value.trim().toLowerCase()==='bdh2026'){document.getElementById('gate').style.display='none';document.getElementById('g').style.display='block';window.scrollTo(0,0)}else{document.getElementById('err').style.display='block'}};
+document.querySelectorAll('.filters button').forEach(function(b){b.onclick=function(){document.querySelectorAll('.filters button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');document.querySelectorAll('.card').forEach(function(c){c.style.display=(b.dataset.f==='all'||c.dataset.c===b.dataset.f)?'':'none'})}});
+</script></body></html>
